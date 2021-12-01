@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+
+body {
+  background-image: url(asset/image.jpg);
+   backgroud :linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5));
+   background-size: cover;
+   background-position: center;
+ }
+
+*
+{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submit_btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+<br>
+<center><h3 style="font-size: 8vw; color: white;">Contact Form</h3></center>
+
+<br><br><br>
+
+
+<div class="container">
+  <form action="Contact_form.php" method="post">
+    <label>Email Id</label>
+    <input type="text" id="fname" name="email" placeholder="Your Email address" required="">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required=""></textarea>
+
+    <button class="submit_btn" type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
